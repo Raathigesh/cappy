@@ -1,0 +1,43 @@
+{
+  "name": "cappy",
+  "displayName": "cappy",
+  "description": "Code co-pilot",
+  "version": "0.0.1",
+  "publisher": "Raathigeshan",
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21",
+    "tslint": "^5.8.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  },
+  "dependencies": {
+    "sockette": "^2.0.0",
+    "websocket": "^1.0.26"
+  }
+}
