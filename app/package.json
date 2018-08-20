@@ -1,6 +1,6 @@
 {
   "name": "cappy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "dependencies": {
     "cors": "^2.8.4",
     "emoji-mart": "^2.8.1",

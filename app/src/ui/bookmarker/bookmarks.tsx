@@ -20,10 +20,10 @@ function Bookmarker({
 }: Props) {
   return (
     <div>
+      <ActiveEditor path={currentPath} setBookmark={setBookmark} />
       {bookmarks.map(bookmark => (
         <Bookmark item={bookmark} openInEditor={openInEditor} />
       ))}
-      <ActiveEditor path={currentPath} setBookmark={setBookmark} />
     </div>
   );
 }

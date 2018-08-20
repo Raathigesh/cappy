@@ -4,7 +4,6 @@ const { Emoji, Picker } = require('emoji-mart');
 import { Elevation } from '@blueprintjs/core';
 import {
   Container,
-  Header,
   FilePath,
   Comment,
   Content,
@@ -37,7 +36,7 @@ export default class Bookmark extends React.Component<Props> {
 
   render() {
     const {
-      item: { title, path, comment },
+      item: { path, comment },
       openInEditor
     } = this.props;
     return (
@@ -67,8 +66,6 @@ export default class Bookmark extends React.Component<Props> {
             onClick={this.openPicker}
           />
           <Content>
-            <Header>{title}</Header>
-            <FilePath>{path}</FilePath>
             <Comment>
               <EditableComment
                 className="not-draggable"
@@ -78,6 +75,7 @@ export default class Bookmark extends React.Component<Props> {
                 }}
               />
             </Comment>
+            <FilePath>{path}</FilePath>
           </Content>
         </Container>
       </Draggale>

@@ -6,7 +6,7 @@ const Container = styled(Card)`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
+  padding: 7px;
 `;
 
 const Header = styled.div`
@@ -17,7 +17,7 @@ const Header = styled.div`
 
 const FilePath = styled.div`
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 14px;
   color: #6e6e6e;
   margin-top: 5px;
 `;
@@ -26,7 +26,6 @@ const Comment = styled.div`
   font-family: Roboto;
   font-size: 12px;
   color: #6e6e6e;
-  margin-top: 5px;
 `;
 
 const EditableComment = styled(EditableText as any)`

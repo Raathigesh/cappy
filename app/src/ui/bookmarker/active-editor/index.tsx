@@ -3,7 +3,18 @@ import styled from 'styled-components';
 import { Button } from '@blueprintjs/core';
 import { observer } from 'mobx-react';
 
-const Container = styled.div``;
+const Container = styled.div`
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: #deeede;
+`;
+
+const AddButton = styled(Button)`
+  margin-left: 10px;
+  border-radius: 50px !important;
+`;
 
 interface Props {
   path: string;
@@ -11,13 +22,16 @@ interface Props {
 }
 
 function AvtiveEditor({ path, setBookmark }: Props) {
+  if (!path) {
+    return null;
+  }
+
   return (
     <Container>
       {path}
-      <Button
+      <AddButton
         rightIcon="arrow-right"
         intent="success"
-        text="Next step"
         onClick={() => {
           setBookmark(path);
         }}
