@@ -1,7 +1,7 @@
-import React from "react";
-import BookmarksStore from "./store/bookmarks";
-import Bookmarks from "./bookmarks";
-import { observer } from "mobx-react";
+import * as React from 'react';
+import BookmarksStore from './store/bookmarks';
+import Bookmarks from './bookmarks';
+import { observer } from 'mobx-react';
 
 const bookmarkStore = new BookmarksStore();
 

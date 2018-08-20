@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Button } from "@blueprintjs/core";
-import { observer } from "mobx-react";
+import * as React from 'react';
+import styled from 'styled-components';
+import { Button } from '@blueprintjs/core';
+import { observer } from 'mobx-react';
 
 const Container = styled.div``;
 

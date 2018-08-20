@@ -1,9 +1,9 @@
-import React from "react";
-import Bookmark from "./bookmark";
-import BookmarkType from "./store/bookmark";
-import { IObservableArray } from "mobx";
-import { observer } from "mobx-react";
-import ActiveEditor from "./active-editor";
+import * as React from 'react';
+import Bookmark from './bookmark';
+import BookmarkType from './store/bookmark';
+import { IObservableArray } from 'mobx';
+import { observer } from 'mobx-react';
+import ActiveEditor from './active-editor';
 
 interface Props {
   currentPath: string;

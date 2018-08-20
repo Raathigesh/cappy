@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Card, EditableText } from "@blueprintjs/core";
+import styled from 'styled-components';
+import { Card, EditableText } from '@blueprintjs/core';
 
 const Container = styled(Card)`
   width: 300px;
@@ -29,7 +29,7 @@ const Comment = styled.div`
   margin-top: 5px;
 `;
 
-const EditableComment = styled(EditableText)`
+const EditableComment = styled(EditableText as any)`
   font-size: 15px;
   margin-top: 5px;
   background-color: #f0f0ff;

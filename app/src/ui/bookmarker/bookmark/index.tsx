@@ -1,7 +1,7 @@
-import React from "react";
-import Draggale from "react-draggable";
-import { Emoji, Picker } from "emoji-mart";
-import { Elevation } from "@blueprintjs/core";
+import * as React from 'react';
+import Draggale from 'react-draggable';
+const { Emoji, Picker } = require('emoji-mart');
+import { Elevation } from '@blueprintjs/core';
 import {
   Container,
   Header,
@@ -9,13 +9,13 @@ import {
   Comment,
   Content,
   EditableComment
-} from "./styled";
-import BookmarkStore from "../store/bookmark";
+} from './styled';
+import BookmarkStore from '../store/bookmark';
 
-import "emoji-mart/css/emoji-mart.css";
-import "@blueprintjs/core/lib/css/blueprint.css";
-import "@blueprintjs/icons/lib/css/blueprint-icons.css";
-import { observer } from "mobx-react";
+import 'emoji-mart/css/emoji-mart.css';
+import '@blueprintjs/core/lib/css/blueprint.css';
+import '@blueprintjs/icons/lib/css/blueprint-icons.css';
+import { observer } from 'mobx-react';
 
 interface Props {
   item: BookmarkStore;
@@ -26,7 +26,7 @@ interface Props {
 export default class Bookmark extends React.Component<Props> {
   state = {
     isPickerOpen: false,
-    emoji: "santa"
+    emoji: 'santa'
   };
 
   openPicker = () => {
@@ -44,7 +44,7 @@ export default class Bookmark extends React.Component<Props> {
       <Draggale cancel=".not-draggable">
         <Container
           elevation={Elevation.THREE}
-          interactive
+          interactive={true}
           onClick={() => {
             openInEditor(path);
           }}
@@ -52,13 +52,13 @@ export default class Bookmark extends React.Component<Props> {
           {this.state.isPickerOpen && (
             <Picker
               set="emojione"
-              onSelect={e =>
+              onSelect={(e: any) =>
                 this.setState({
                   emoji: e.id,
                   isPickerOpen: false
                 })
               }
-              style={{ position: "absolute" }}
+              style={{ position: 'absolute' }}
             />
           )}
           <Emoji

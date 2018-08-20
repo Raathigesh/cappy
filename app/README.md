@@ -1,46 +1,28 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/custom-server-typescript)
+## Majestic 1.0
 
-# Custom server with TypeScript + Nodemon example
+You are looking at a complete rewrite of majestic. Still very early. Come back in couple of weeks.
 
-## How to use
+## Inspiration
 
-### Using `create-next-app`
+This tool is inspired by https://wallabyjs.com/. Check it out.
 
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+## Thanks
 
-```bash
-npx create-next-app --example custom-server-typescript custom-server-typescript-app
-# or
-yarn create next-app --example custom-server-typescript custom-server-typescript-app
-```
+Thank you [@orta](https://github.com/orta) for building [VSCode Jest](https://github.com/jest-community/vscode-jest) and doing the heavy lifting.
 
-### Download manually
+## Contributors
 
-Download the example:
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/custom-server-typescript
-cd custom-server-typescript
-```
+| [<img src="https://avatars2.githubusercontent.com/u/3108160?s=460&v=4" width="100px;"/><br /><sub>Raathigeshan</sub>](https://twitter.com/Raathigesh)<br />💻 📖 💬 👀 🤔 🎨 | [<img src="https://avatars0.githubusercontent.com/u/9067274?s=400&v=4" width="100px;"/><br /><sub>James Adams</sub>](https://twitter.com/jamesadams0)<br />💻 🐛 📖 🤔 | [<img src="https://avatars2.githubusercontent.com/u/1297597?s=460&v=4" width="100px;"/><br /><sub>Lucas Azzola</sub>](https://twitter.com/lucasazzola)<br />💻 👀 🤔 | [<img src="https://avatars1.githubusercontent.com/u/13363433?v=4" width="100px;"/><br /><sub><b>Napoleon Oikonomou</b></sub>](https://iamnapo.me)<br />[💻](https://github.com/Raathigesh/majestic/commits?author=iamnapo 'Code') [📦](https://github.com/caskroom/homebrew-cask/blob/master/Casks/majestic.rb 'Packaging/porting to new platform') |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
-Install it and run:
 
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
+Contributions of any kind are welcome!
 
-```bash
-now
-```
+## License
 
-## The idea behind the example
-
-The example shows how you can use [TypeScript](https://typescriptlang.com) on both the server and the client while using [Nodemon](https://nodemon.io/) to live reload the server code without affecting the Next.js universal code.
-Server entry point is `server/index.ts` in development and `production-server/index.js` in production.
-The second directory should be added to `.gitignore`.
+MIT © [Raathigeshan](https://twitter.com/Raathigesh)

@@ -6,7 +6,6 @@ export function connect(onMessage: (payload: any) => void) {
   return new Promise((resolve, reject) => {
     const ws = new Sockette("ws://localhost:2525", {
       timeout: 5e3,
-      maxAttempts: 1,
       onopen: e => {
         resolve(ws);
       },

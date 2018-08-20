@@ -1,6 +1,6 @@
-import { connect } from "../../../lib/socket";
-import { observable, IObservableArray } from "mobx";
-import Bookmark from "./bookmark";
+import { connect } from '../../lib';
+import { observable, IObservableArray } from 'mobx';
+import Bookmark from './bookmark';
 
 export default class Bookmarks {
   @observable
@@ -25,7 +25,7 @@ export default class Bookmarks {
   openInEditor = (path: string) => {
     this.connection.then(connection => {
       connection.send({
-        type: "open-editor",
+        type: 'open-editor',
         path
       });
     });
@@ -38,6 +38,6 @@ export default class Bookmarks {
       return;
     }
 
-    this.bookmarks.push(new Bookmark("Title", path, ""));
+    this.bookmarks.push(new Bookmark('Title', path, ''));
   };
 }

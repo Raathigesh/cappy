@@ -2,7 +2,7 @@
   "name": "cappy",
   "displayName": "cappy",
   "description": "Code co-pilot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Raathigeshan",
   "engines": {
     "vscode": "^1.26.0"
