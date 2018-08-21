@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Bookmarker from './ui/bookmarker';
+import 'typeface-roboto';
 
 const BookMarker = () => <Bookmarker />;
 
